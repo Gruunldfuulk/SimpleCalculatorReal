@@ -5,8 +5,92 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleCalculatorReal"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Volume Calculator" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lbl_Title"
+            Content="Volume Calculator"
+            Grid.Row="0"
+            Grid.Column="0"
+            FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"
+            />
+        <Grid
+            Grid.Row="1"
+            Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Content="Length"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Padding="0,0,15,0"
+                FontSize="20"
+                />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Content="Width"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Padding="0,0,15,0"
+                FontSize="20"
+                />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Content="Height"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Padding="0,0,15,0"
+                FontSize="20"
+                />
+
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                Content="Volume"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Padding="0,0,15,0"
+                FontSize="20"
+                />
+
+        </Grid>
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1"
+            Orientation="Vertical">
+            <Label
+                Content="Photo"
+                HorizontalAlignment="Center"/>
+            <Button
+                Content="Exit"
+                Width="75"
+                Height="30"
+                HorizontalAlignment="center"
+                FontSize="16"
+                />
+
+        </StackPanel>
         
+
     </Grid>
 </Window>
